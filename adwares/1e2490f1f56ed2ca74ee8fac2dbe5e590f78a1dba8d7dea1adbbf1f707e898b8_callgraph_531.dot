@@ -1,0 +1,24 @@
+digraph CallGraph {
+"<cn.bighead.utils.Encoding: void main(java.lang.String[])>" -> "<java.lang.System: void <clinit>()>";
+"<cn.bighead.utils.Encoding: void main(java.lang.String[])>" -> "<cn.bighead.utils.Encoding: java.lang.String covert2Url(java.lang.String,java.lang.String)>";
+"<java.lang.ThreadGroup: void uncaughtException(java.lang.Thread,java.lang.Throwable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.Exception: void <init>()>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<cn.bighead.utils.Encoding: java.lang.String covert2Url(java.lang.String,java.lang.String)>" -> "<java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.Exception: void <init>()>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.Object: void finalize()>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.Throwable: void <init>()>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Object: void finalize()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+}

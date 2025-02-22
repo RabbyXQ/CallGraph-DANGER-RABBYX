@@ -1,0 +1,36 @@
+digraph CallGraph {
+"<com.baidu.AdType: void main(java.lang.String[])>" -> "<com.baidu.AdType: void <clinit>()>";
+"<com.baidu.AdType: void main(java.lang.String[])>" -> "<com.baidu.AdType: com.baidu.AdType[] values()>";
+"<com.baidu.AdType: void main(java.lang.String[])>" -> "<java.lang.System: void <clinit>()>";
+"<com.baidu.AdType: void <clinit>()>" -> "<com.baidu.AdType: void <init>(java.lang.String,int,int)>";
+"<com.baidu.AdType: void <clinit>()>" -> "<com.baidu.AdType: void <init>(java.lang.String,int,int)>";
+"<java.lang.ThreadGroup: void uncaughtException(java.lang.Thread,java.lang.Throwable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.Exception: void <init>()>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<com.baidu.AdType: com.baidu.AdType[] values()>" -> "<com.baidu.AdType: void <clinit>()>";
+"<com.baidu.AdType: void <init>(java.lang.String,int,int)>" -> "<java.lang.Enum: void <init>(java.lang.String,int)>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.Exception: void <init>()>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.Object: void finalize()>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.Throwable: void <init>()>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Enum: void <init>(java.lang.String,int)>" -> "<java.lang.Enum: void finalize()>";
+"<java.lang.Enum: void <init>(java.lang.String,int)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Enum: void <init>(java.lang.String,int)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Object: void finalize()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Enum: void finalize()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<com.baidu.AdType: com.baidu.AdType[] values()>" -> "<java.lang.Object: java.lang.Object clone()>";
+"<java.lang.Object: java.lang.Object clone()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<com.baidu.AdType: void main(java.lang.String[])>" -> "<com.baidu.AdType: java.lang.String toString()>";
+"<com.baidu.AdType: java.lang.String toString()>" -> "<java.lang.Enum: java.lang.String toString()>";
+"<java.lang.Enum: java.lang.String toString()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+}

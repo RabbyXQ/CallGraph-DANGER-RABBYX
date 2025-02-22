@@ -1,0 +1,32 @@
+digraph CallGraph {
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.System: void <clinit>()>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.Package: java.lang.Package getPackage(java.lang.String)>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.StringBuffer: void <init>()>";
+"<java.lang.ThreadGroup: void uncaughtException(java.lang.Thread,java.lang.Throwable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.ClassLoader: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.Exception: void <init>()>";
+"<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Package: java.lang.Package getPackage(java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.StringBuffer: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.StringBuffer: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.Exception: void <init>()>";
+"<java.lang.RuntimeException: void <init>(java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.Object: void finalize()>";
+"<java.lang.Object: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.Throwable: void <init>()>";
+"<java.lang.Exception: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Object: void finalize()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.Object: void <init>()>";
+"<java.lang.Throwable: void <init>()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+"<com.amazonaws.javax.xml.stream.Version: void main(java.lang.String[])>" -> "<java.lang.StringBuffer: java.lang.String toString()>";
+"<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+"<java.lang.StringBuffer: java.lang.String toString()>" -> "<java.lang.RuntimeException: void <init>(java.lang.String)>";
+}
